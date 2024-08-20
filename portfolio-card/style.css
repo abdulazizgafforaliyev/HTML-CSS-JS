@@ -1,0 +1,113 @@
+*{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4f4;
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    padding: 25px;
+    border-radius: 24px;
+    position: relative;
+}
+.profile-card::before{
+    content: ' ';
+    position: absolute;
+    background-color: rgb(50, 71, 178);
+    height: 30%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 24px 24px 0 0 ;
+}
+.text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 30px;
+}
+.text-data .name{
+    font-weight: bold;
+}
+.image{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: rgb(50, 71, 178);
+    margin-bottom: 20px;
+    
+}
+.image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.social-media{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link{
+    margin:0 10px;
+    text-decoration: none;
+    background-color: blue;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 100;
+}
+.buttons .button{
+    background-color: rgb(50, 71, 178);
+    padding: 7px 30px 7px;
+    margin: 9px;
+    margin-top: 20px;
+    border-radius: 20px;
+    color: white;
+    border: 0;
+    font-size: 14px;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+
+.statistics{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    color: #333;
+    padding: 0 20px;
+    border-right: 2px solid rgb(196, 188, 188);
+}
+.item i{
+    font-size: 18px;
+    margin: 7px;
+}
+.item:last-child{
+    border-right: none;
+}
