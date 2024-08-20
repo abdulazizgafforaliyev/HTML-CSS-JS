@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Telegram intro</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="upper-header">
+            <button class="minus"><i class='bx bx-minus' ></i></button>
+            <button class="square" onclick="change()"><i class='bx bx-checkbox' ></i></button>
+            <button class="cross"><i class='bx bx-x'></i></button>
+            
+            
+        </div>
+        <div class="mid-header">
+            <button class="arrow-left"><i class='bx bx-left-arrow-alt'></i></button>
+            <button class="settings">Settings</button>
+        </div>
+        <div class="main-box">
+            <i class='bx bx-qr big' ></i>
+            <h2 class="title">Scan From Mobile Telegram</h2>
+            <ol>
+                <li>Open telegram on your phone</li>
+                <li>Go To Settings > Devices > Link Desktop Device</li>
+                <li>Scan this image to Log in</li>
+            </ol>
+            <a href="#" class="link">Or log in using your phone number</a>
+        </div>
+    </div>
+
+</body>
+<script>
+    let changed = false;
+    function change(){
+        if (!changed){
+            document.querySelector('.square').innerHTML = (`<i class='bx bx-windows'></i>`);
+            changed = true;
+        }else{
+            document.querySelector('.square').innerHTML = (`<i class='bx bx-checkbox'></i>`);
+            changed = false;
+        }
+    }
+</script>
+</html>
